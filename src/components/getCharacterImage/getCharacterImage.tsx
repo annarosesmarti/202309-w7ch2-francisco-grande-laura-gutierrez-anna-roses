@@ -1,4 +1,4 @@
-interface CharacterImageProps {
+export interface CharacterImageProps {
   characterId: number;
   altText?: string;
 }
