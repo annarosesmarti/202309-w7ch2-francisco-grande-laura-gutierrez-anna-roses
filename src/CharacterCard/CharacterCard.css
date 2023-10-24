@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
+.card__item--image {
+  border-radius: 20px;
+  width: 288px;
+  height: 320px;
+  object-fit: cover;
+}
