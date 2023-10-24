@@ -3,7 +3,7 @@ interface CharacterImageProps {
   altText?: string;
 }
 
-function getImageData({ characterId }: CharacterImageProps): JSX.Element {
+function getCharacterImage({ characterId }: CharacterImageProps): JSX.Element {
   const imageUrl = `https://starwars-visualguide.com/assets/img/characters/${characterId}.jpg`;
 
   return (
@@ -15,4 +15,4 @@ function getImageData({ characterId }: CharacterImageProps): JSX.Element {
   );
 }
 
-export default getImageData;
+export default getCharacterImage;
