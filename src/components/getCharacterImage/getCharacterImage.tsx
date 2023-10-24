@@ -9,7 +9,7 @@ function getCharacterImage({ characterId }: CharacterImageProps): JSX.Element {
   return (
     <img
       src={imageUrl}
-      alt={`This character is called ${characterId}`}
+      alt={`This character's ID is ${characterId}`}
       className="character_image"
     />
   );
