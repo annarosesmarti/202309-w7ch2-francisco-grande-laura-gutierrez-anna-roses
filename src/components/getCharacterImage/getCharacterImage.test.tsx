@@ -5,7 +5,7 @@ describe("Given Luke SkyWalker with id 1", () => {
   const characterId = 1;
   const altText = "Luke Skywalker";
 
-  describe("When rendering the CharacterImage component", () => {
+  describe("When rendering Luke's CharacterImage component", () => {
     let imageElement: RenderResult;
 
     beforeEach(() => {
