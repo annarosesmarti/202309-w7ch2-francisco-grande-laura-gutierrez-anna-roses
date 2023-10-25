@@ -31,3 +31,33 @@ body {
 ul {
   list-style: none;
 }
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header__title {
+  font-size: 80px;
+  color: var(--second-color);
+  -webkit-text-stroke: 1px black;
+  text-shadow:
+    3px 3px 0 #ffe81f,
+    -1px -1px 0 #ffe81f,
+    1px -1px 0 #ffe81f,
+    -1px 1px 0 #ffe81f,
+    1px 1px 0 #ffe81f;
+  letter-spacing: 0.35rem;
+}
+
+.button__delete-mass {
+  border: 1px solid #381010;
+  background-color: #334e30;
+  font-size: 20px;
+  font-family: var(--main-font-family);
+  color: #ffe81f;
+  padding: 30px 20px;
+  border-radius: 10px;
+  gap: 40px;
+  margin: 1rem;
+}
