@@ -4,6 +4,7 @@ import "./CharacterCard.css";
 
 interface CharacterProps {
   characters: CharacterStructure;
+  image: number;
 }
 
 const CharacterCard = ({
