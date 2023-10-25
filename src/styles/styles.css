@@ -4,7 +4,8 @@
   --third-color: #334e30;
   --fourth-color: #7e7863;
   --fifth-color: #ad7d37;
-  --main-font-family: 'Star Wars', sans-serif;
+  --sixth-color: #ffe81f;
+  --main-font-family: "Star Wars", sans-serif;
 }
 
 *,
@@ -24,6 +25,7 @@ h1 {
 
 body {
   padding: 20px;
+  background-color: var(--main-color);
 }
 
 ul {

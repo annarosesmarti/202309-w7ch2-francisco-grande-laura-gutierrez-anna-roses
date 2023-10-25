@@ -11,11 +11,19 @@ const CharacterCard = ({
 }: CharacterProps): React.ReactElement => {
   return (
     <ul className="card">
-      <li className="card__item">Name: {name}</li>
-      <li className="card__item">Height: {height}</li>
-      <li className="card__item">Mass: {mass}</li>
-      <li className="card__item">Creation Date: {creationDate}</li>
-      <img className="card__item card__item--image" src={image} alt="" />
+      <li className="card__item card__name">Name: {name}</li>
+      <li className="card__item card__height">Height: {height}</li>
+      <li className="card__item card__mass">Mass: {mass}</li>
+      <li className="card__item card__creation">
+        Creation Date: {creationDate}
+      </li>
+      <img
+        className="card__item card__item--image"
+        src={image}
+        alt="Image of the character"
+      />
+      <button className="card__item card__button">Increase mass</button>
+      <button className="card__item card__button">Decrease mass</button>
     </ul>
   );
 };
