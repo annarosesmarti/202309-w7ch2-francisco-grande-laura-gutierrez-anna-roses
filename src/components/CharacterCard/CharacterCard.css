@@ -22,7 +22,7 @@
 
 .card__item {
   font-weight: lighter;
-  font-family: "Press Start 2P";
+  font-family: "Press Start 2P", monospace;
   font-size: 14px;
   display: flex;
   align-items: center;
