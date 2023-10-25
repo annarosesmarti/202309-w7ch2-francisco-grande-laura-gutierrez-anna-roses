@@ -12,7 +12,7 @@ const CharacterCard = ({
 }: CharacterProps): React.ReactElement => {
   return (
     <div className="card-container">
-      <span className="card__item">Name: {name}</span>
+      <span className="card__item card__name">Name: {name}</span>
       <ul className="card">
         <li className="card__item">Height: {height}</li>
         <li className="card__item">Mass: {mass}</li>
