@@ -1,5 +1,5 @@
 import React from "react";
-import { CharacterStructure } from "../types";
+import { CharacterStructure } from "../../types.js";
 import "./CharacterCard.css";
 
 interface CharacterProps {
