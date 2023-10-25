@@ -3,7 +3,7 @@ import CharacterImage from "./getCharacterImage";
 
 describe("Given Luke SkyWalker with id 1", () => {
   const characterId = 1;
-  const altText = "Luke Skywalker";
+  const altText = `This character's ID is ${characterId}`;
 
   describe("When rendering Luke's CharacterImage component", () => {
     let imageElement: RenderResult;
@@ -39,13 +39,13 @@ describe("Given a characterId without an alternative text", () => {
 
     test("Then it should render an image with the default alternative text", () => {
       expect(
-        imageElement.getByAltText(`This character is ${characterId}`),
+        imageElement.getByAltText(`This character's ID is ${characterId}`),
       ).toBeInTheDocument();
     });
 
     test("Then it should render an image with the correct src attribute", () => {
       expect(
-        imageElement.getByAltText(`Character ${characterId}`),
+        imageElement.getByAltText(`This character's ID is ${characterId}`),
       ).toHaveAttribute(
         "src",
         `https://starwars-visualguide.com/assets/img/characters/${characterId}.jpg`,
