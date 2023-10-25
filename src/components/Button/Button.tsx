@@ -1,12 +1,12 @@
 interface ButtonProps {
-  symbol: "+" | "-" | "Reset";
+  text: "+" | "-" | "Reset";
   actionOnClick: () => void;
 }
 
-const Button = ({ symbol, actionOnClick }: ButtonProps): React.ReactElement => {
+const Button = ({ text, actionOnClick }: ButtonProps): React.ReactElement => {
   return (
     <button className="button" onClick={actionOnClick}>
-      {symbol}
+      {text}
     </button>
   );
 };
