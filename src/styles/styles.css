@@ -4,7 +4,7 @@
   --third-color: #334e30;
   --fourth-color: #7e7863;
   --fifth-color: #ad7d37;
-  --main-font: Georgia;
+  --main-font-family: 'Star Wars', sans-serif;
 }
 
 *,
@@ -14,12 +14,16 @@
 }
 
 html {
-  font-family: var(--main-font);
+  font-family: var(--main-font-family);
 }
 
 body,
 h1 {
   margin: 0;
+}
+
+body {
+  padding: 20px;
 }
 
 ul {
