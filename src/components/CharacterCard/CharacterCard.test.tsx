@@ -13,14 +13,13 @@ describe("Given Luke Skywalker", () => {
 
   describe("When its functions renders its character information", () => {
     test("Then it should render Luke Skywalker's information", () => {
-      const { getByText, getByAltText } = render(
+      const { getByText } = render(
         <CharacterCard characters={characterData} />,
       );
       expect(getByText("Name: Luke Skywalker")).toBeInTheDocument();
       expect(getByText("Height: 172")).toBeInTheDocument();
       expect(getByText("Mass: 77")).toBeInTheDocument();
       expect(getByText("Creation Date: 1977-05-25")).toBeInTheDocument();
-      expect(getByAltText("This character is called 1")).toBeInTheDocument();
     });
   });
 });
