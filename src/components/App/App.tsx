@@ -7,7 +7,7 @@ const App = (): React.ReactElement => {
       <header className="main-header">
         <h1 className="main-header__title">STAR WARS</h1>
         <Button
-          className="button button__reset-mass"
+          className="button__reset-mass"
           actionOnClick={() => {}}
           text="Reset mass"
         />
