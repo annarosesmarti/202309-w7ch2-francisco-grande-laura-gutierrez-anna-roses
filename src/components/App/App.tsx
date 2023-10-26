@@ -1,3 +1,4 @@
+import Button from "../Button/Button";
 import CharacterList from "../CharacterList/CharacterList";
 
 const App = (): React.ReactElement => {
@@ -5,7 +6,7 @@ const App = (): React.ReactElement => {
     <div className="app-container">
       <header className="main-header">
         <h1 className="main-header__title">STAR WARS</h1>
-        <button className="button__delete-mass">delete mass</button>
+        <Button text="Reset mass" actionOnClick={() => {}} />
         <CharacterList />
       </header>
     </div>
