@@ -1,6 +1,3 @@
-import CharacterCard from "../CharacterCard/CharacterCard";
-
-CharacterCard;
 interface ButtonProps {
   className: string;
   actionOnClick: () => void;
