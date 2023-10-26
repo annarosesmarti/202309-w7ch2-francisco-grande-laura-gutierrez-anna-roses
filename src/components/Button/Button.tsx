@@ -1,11 +1,16 @@
 interface ButtonProps {
-  text: "+" | "-" | "Reset";
+  className: string;
   actionOnClick: () => void;
+  text: "Increase mass" | "Decrease mass" | "Reset mass";
 }
 
-const Button = ({ text, actionOnClick }: ButtonProps): React.ReactElement => {
+const Button = ({
+  className,
+  actionOnClick,
+  text,
+}: ButtonProps): React.ReactElement => {
   return (
-    <button className="button" onClick={actionOnClick}>
+    <button className={`custom-button ${className}`} onClick={actionOnClick}>
       {text}
     </button>
   );

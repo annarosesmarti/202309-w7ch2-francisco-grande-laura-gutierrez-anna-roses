@@ -3,12 +3,17 @@ import { fireEvent, render, screen } from "@testing-library/react";
 
 describe("Given a Button component", () => {
   describe("When it receives the text 'Reset'", () => {
-    test("Then it should show a button with the 'Reset' text inside", () => {
-      const expectedText = "Reset";
+    test("Then it should show a button with the 'Reset mass' text inside", () => {
+      const expectedText = "Reset mass";
+      const expectedClassName = "button button__reset-mass";
       const expectedAction = vi.fn();
 
       render(
-        <Button text={`${expectedText}`} actionOnClick={expectedAction} />,
+        <Button
+          className={`${expectedClassName}`}
+          actionOnClick={expectedAction}
+          text={`${expectedText}`}
+        />,
       );
       const button = screen.getByRole("button", { name: expectedText });
       expect(button).toBeInTheDocument();
@@ -18,10 +23,17 @@ describe("Given a Button component", () => {
 
 describe("When the user clicks and receives an action", () => {
   test("Then it should call receives action", () => {
-    const expectedText = "Reset";
+    const expectedText = "Reset mass";
+    const expectedClassName = "button button__reset-mass";
     const expectedAction = vi.fn();
 
-    render(<Button text={`${expectedText}`} actionOnClick={expectedAction} />);
+    render(
+      <Button
+        className={`${expectedClassName}`}
+        actionOnClick={expectedAction}
+        text={`${expectedText}`}
+      />,
+    );
     const button = screen.getByRole("button", { name: expectedText });
     fireEvent.click(button);
 
