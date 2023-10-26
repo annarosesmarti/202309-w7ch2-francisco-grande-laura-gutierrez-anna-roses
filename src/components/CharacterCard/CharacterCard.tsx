@@ -26,12 +26,12 @@ const CharacterCard = ({
           height="320"
         />
         <Button
-          className="button card__button"
+          className="card__button"
           actionOnClick={() => {}}
           text="Decrease mass"
         />
         <Button
-          className="button card__button"
+          className="card__button"
           actionOnClick={() => {}}
           text="Increase mass"
         />
