@@ -1,6 +1,7 @@
 interface ButtonProps {
-  text: "+" | "-" | "Reset mass";
+  className: string;
   actionOnClick: () => void;
+  text: "+" | "-" | "Reset mass";
 }
 
 const Button = ({ text, actionOnClick }: ButtonProps): React.ReactElement => {
