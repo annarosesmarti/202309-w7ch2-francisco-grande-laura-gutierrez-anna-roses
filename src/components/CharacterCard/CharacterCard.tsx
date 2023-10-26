@@ -1,6 +1,7 @@
 import React from "react";
 import { CharacterStructure } from "../../types.js";
 import "./CharacterCard.css";
+import Button from "../Button/Button.js";
 
 interface CharacterProps {
   characters: CharacterStructure;
@@ -24,8 +25,16 @@ const CharacterCard = ({
           width="288"
           height="320"
         />
-        <button className="card__item card__button">Increase mass</button>
-        <button className="card__item card__button">Decrease mass</button>
+        <Button
+          className="button card__button"
+          actionOnClick={() => {}}
+          text="Decrease mass"
+        />
+        <Button
+          className="button card__button"
+          actionOnClick={() => {}}
+          text="Increase mass"
+        />
       </ul>
     </div>
   );
