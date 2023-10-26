@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CharacterStructure } from "../../types";
 import CharacterCard from "../CharacterCard/CharacterCard";
+import Button from "../Button/Button";
 
 interface CharacterProps {
   id: number;
@@ -9,6 +10,8 @@ interface CharacterProps {
   mass: string;
   created: string;
   image: string;
+  increaseMass: (mass: string) => void
+  decreaseMass: (mass: string) => void
 }
 
 const CharacterList = (): React.ReactElement => {
@@ -27,7 +30,7 @@ const CharacterList = (): React.ReactElement => {
   return (
     <div>
       <ul className="list-container">
-        {list.map((character, position): React.ReactElement => (
+        {list.slice(0, 10).map((character, position): React.ReactElement => (
           <li key={position}>
             <CharacterCard characters={character} image={0} />
           </li>
